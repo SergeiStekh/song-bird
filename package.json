@@ -1,6 +1,6 @@
 {
-  "name": "song-bird-new",
-  "version": "0.1.0",
+  "name": "SongBird",
+  "version": "1.0.0",
   "private": true,
   "dependencies": {
     "@testing-library/jest-dom": "^5.16.4",
@@ -34,5 +34,14 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
+  },
+  "devDependencies": {
+    "react-h5-audio-player": "^3.8.4",
+    "react-redux": "^8.0.2",
+    "react-transition-group": "^4.4.2",
+    "redux": "^4.2.0",
+    "redux-thunk": "^2.4.1",
+    "resolve-url-loader": "^5.0.0",
+    "sass": "^1.52.3"
   }
 }

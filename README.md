@@ -1,70 +1,40 @@
-# Getting Started with Create React App
+# Game: guess the bird
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
-## Available Scripts
+[Deploy link](https://song-bird-portfolio.netlify.app/).
 
-In the project directory, you can run:
+[Link to Github repository](https://github.com/SergeyCodeJs/song-bird-portfolio).
 
-### `npm start`
+## What it is:
+This is an interactive web game in which you have to listen to the voices of birds and guess the name of the bird by its voice. For every correct answer, you get points, for every wrong answer, points are deducted. The game is divided into 6 levels, in each of which you can score a maximum of 5 points and a minimum of 0 points.
+You can first listen to all the birds, read their descriptions and see how they look. After the start of the game, access to this functionality is closed. The game starts after launching the bird's voice on the game screen.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+## Installation:
+1. An application is already built, located in the ```'/build'``` folder.
+1. The source files are in the ```'./src``` folder.
+1. To build, download the files from the repository and install the dependencies use npm: ```npm install. ```
+1. Use the ```npm run start.``` script to run the project.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+Technology:
+```HTML5```, ```CSS3```, ```JavaScript ES6```, ```React```, ```React hooks```, ```Redux```, ```react-transition-group```, ```Redux thunk```.
+```Create React App``` is used for building.
+The ```SASS``` preprocessor is used. ```CSS``` modules are also applied.
 
-### `npm test`
+## Technical features:
+1. Adaptive layout, application works equally well on desktops, tablets and mobile devices, fully responsive.
+1. The provided layout is designed cross-browser. Browser requirements met: ```Internet Explorer 11```, ```edge``` and ```Chrome```, ```Opera```, ```Yandex Browser```, ```Firefox``` latest versions.
+1. Used ```Create React App``` builder, the officially supported builder for building single-line apps with ```React```.
+1. ```React``` is used, visual components are separated from logic, data stored in Redux store.
+1. ```HTML5/CSS3/JSX``` code divided into modules;
+1. Validity checked using [https://validator.w3.org/](https://validator.w3.org/), Document checking completed. No errors or warnings.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+## Implementation nuances
 
-### `npm run build`
+1. The component approach is applied, the code is divided into modules, which are contained in the ```/components``` folder.
+1. First we fetch data. The data is passed to the required components using ```Redux```. If an error occurs, a special page appears that shows that something went wrong. If the data is loading, the loading screen appears (in this case, since the application is not communicating with the server, the loading is simulated using ```SetTimeout```, which resolves the ```Promise``` with a delay of 2 seconds).
+1. All components are wrapped in ```Error Boundary```, which keeps track of errors. If there is an error in the application, a special component will be shown to indicate that something went wrong.
+1. Redux Store is divided into logical parts using Combine Reducers.
+1. ```Redux Thunk``` is used.
+1. Responsiveness implemented with ```@media queries``` and ```responsive web design```.
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+Have a good game, and may you be lucky!

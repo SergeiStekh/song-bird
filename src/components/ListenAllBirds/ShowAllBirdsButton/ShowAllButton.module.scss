@@ -1,0 +1,36 @@
+.button_text_wrapper {
+    position: relative;
+    width: 154px;
+    height: 17px;
+    margin: 0 auto;
+    user-select: none;
+}
+
+.button {
+    position: relative;
+    margin-bottom: 37px;
+    border: 2px solid #FFE604;
+    height: 50px;
+    outline: 0;
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+    &:hover {
+        background: #FFEF5D;
+        cursor: pointer;
+    }
+}
+
+.button_deactivated {
+    position: relative;
+    cursor: not-allowed;
+    margin-bottom: 37px;
+    border: 2px solid #F3F3F3;
+    height: 50px;
+    text-align: center;
+}
+@media (max-width: 420px) {
+    .button_text_wrapper {
+        .button_text {
+            font-size: 12px;
+        }
+    }
+}

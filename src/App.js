@@ -1,25 +1,27 @@
-import logo from './logo.svg';
-import './App.css';
+import React from 'react';
+import Layout from './hoc/SiteLayout/SiteLayout'
+import withData from './hoc/withData'
+import ErrorBoundary from './components/ErrorBoundary/ErrorBoundary'
+import Game from './components/Game/Game';
+import Header from './components/Header/header'
+import HowTo from './components/HowTo/howTo'
+import ListenAllBirds from './components/ListenAllBirds/listenAllBirds';
+import NextRoundButton from './components/NextRoundButton/NextRoundButton'
+import Footer from './components/Footer/Footer'
 
 function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+    return (
+        <ErrorBoundary>
+            <Layout>
+                <Header/>
+                <HowTo/>
+                <ListenAllBirds/>
+                <Game/>
+                <NextRoundButton/>
+                <Footer/>
+            </Layout>
+        </ErrorBoundary>
+    );
 }
 
-export default App;
+export default withData(App);
