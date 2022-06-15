@@ -1,9 +1,9 @@
 # Game: guess the bird
 
 
-[Deploy link](https://song-bird-portfolio.netlify.app/).
+[Deploy link](https://song-bird-game.netlify.app/).
 
-[Link to Github repository](https://github.com/SergeyCodeJs/song-bird-portfolio).
+[Link to Github repository](https://github.com/SergeyCodeJs/song-bird).
 
 ## What it is:
 This is an interactive web game in which you have to listen to the voices of birds and guess the name of the bird by its voice. For every correct answer, you get points, for every wrong answer, points are deducted. The game is divided into 6 levels, in each of which you can score a maximum of 5 points and a minimum of 0 points.
