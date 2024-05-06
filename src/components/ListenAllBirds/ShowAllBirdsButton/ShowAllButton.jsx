@@ -11,7 +11,7 @@ function ShowAllButton({isGameStarted, isInterfaceOpen, openListenAllModal}) {
     let wrapperStyles = {};
     let onButtonClickHandler = openListenAllModal;
     let buttonText = !isInterfaceOpen
-        ? 'Listen to the songs of all the birds.'
+        ? 'Listen all the birds'
         : 'Close player';
     let ArrowElement = <Arrow isInterfaceOpen={isInterfaceOpen}/>;
 
