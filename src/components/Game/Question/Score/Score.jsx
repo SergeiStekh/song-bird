@@ -17,7 +17,7 @@ function Score({totalScore, worms}) {
         timeout={300} 
         classNames="score-opacity">
             <div className="score_wrapper">
-                <p className="score_worms">{`Общий счет: ${totalScore} ${getWormName(totalScore)}`}</p>
+                <p className="score_worms">{`Total score: ${totalScore} ${getWormName(totalScore)}`}</p>
                 <div>
                     {wormsArray}
                 </div>

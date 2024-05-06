@@ -12,7 +12,7 @@ const Footer = () => {
           <p>2020</p>
         </div>
         <div className={thanks}>
-          <p>Thanks for illustrations: https://icons8.ru</p>
+          <p>Thanks for illustrations: Icons8</p>
         </div>
       </div>
     </div>
