@@ -11,12 +11,12 @@ function ShowAllButton({isGameStarted, isInterfaceOpen, openListenAllModal}) {
     let wrapperStyles = {};
     let onButtonClickHandler = openListenAllModal;
     let buttonText = !isInterfaceOpen
-        ? 'Listen to all the birds'
+        ? 'Listen to the songs of all the birds.'
         : 'Close player';
     let ArrowElement = <Arrow isInterfaceOpen={isInterfaceOpen}/>;
 
     if (isGameStarted) {
-        buttonText = 'The game has begun, and peep against the rules!';
+        buttonText = 'The game is underway, let\'s tweet within the rules!';
         cls = button_deactivated;
         wrapperStyles = {
             width: "100%"

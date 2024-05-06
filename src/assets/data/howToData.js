@@ -1,12 +1,24 @@
 export const howToData = {
-  whatToDoHeader: "What to do",
+  whatToDoHeader: "How to play",
   whatToDoContent: [
-      "Listen to the singing and guess which bird is singing.", "Complete six levels: in each stage you will hear the voices of different types of birds.", "You can go to the next level when you make the right choice.", "To warm up, listen to all the birds before you start playing. When you start the game. this block will become unavailable. All to be honest!"
+    "Listen to the melodies and try to identify the bird species singing.",
+
+    "Progress through six levels, each featuring various avian vocalizations.",
+    
+    "Advance to the next level upon correctly identifying the bird.",
+    
+    "Prior to starting, familiarize yourself with the bird calls for a warm-up.",
+    
+    "Once the game commences, this option will no longer be accessible.",
+    
+    "Stay honest throughout!"
   ],
   scoreHeader: "Points",
   scoreContent: [
-    "At each stage, you are given five worms. For each wrong answer, the bird eats one.",
-    "For example, you guessed correctly on the third try, so you have 2 worms in this round.", "They are summed up.",
-    "Maximum, in the whole game, you can collect thirty worms."
+    "At each stage, you are provided with five worms. With each incorrect answer, the bird consumes one worm.",
+
+    "For instance, if you correctly guess on the third attempt, you will have 2 worms remaining for that round. The totals accumulate.",
+
+    "Throughout the entire game, you can amass a maximum of thirty worms."
   ]
 }
